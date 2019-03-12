@@ -1,21 +1,11 @@
 import struct
 import socket
 
+from XPlaneMessage import XPlaneMessage
+
 Address = "127.0.0.1"
 Port = 8088
 BufferSize = 4096
-
-
-class XPlaneMessage:
-    def __init__(self):
-        self.Id = -1
-        self.Values = []
-
-    def __str__(self):
-        result = f'{self.Id} -> '
-        for i in range(0, len(self.Values)):
-            result += f'{self.Values[i]} , '
-        return result
 
 
 def start_program():
