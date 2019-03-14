@@ -17,11 +17,17 @@ def messages2bytes(messages):
 
 def start_program():
     # test program
-    values = [float(1) for i in range(0, 8)]
-    message = XPlaneMessage()
-    message.Id = 25
-    message.Values = values
-    data = messages2bytes(message)
+    values1 = [float(1) for i in range(0, 8)]
+    values2 = [float(0) for i in range(0, 8)]
+    values2[0] = 0.35
+    messages = []
+    messages.append(XPlaneMessage())
+    messages[0].Id = 25
+    messages[0].Values = values1
+    messages.append(XPlaneMessage())
+    messages[1].Id = 8
+    messages[1].Values = values2
+    data = messages2bytes(messages)
     print(data)
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
     while True:
