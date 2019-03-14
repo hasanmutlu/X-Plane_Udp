@@ -15,7 +15,9 @@ def generate_file_name():
 
 def write_messages_to_file(messages, file):
     # data order is pitch roll heading altitude speed throttle elevation aileron rudder
-    file.write(f'{messages[17].Values[0]} {messages[17].Values[1]} {messages[17].Values[2]} {messages[20].Values[3]} {messages[3].Values[0]} {messages[25].Values[0]} {messages[8].Values[0]} {messages[8].Values[1]} {messages[8].Values[2]}\n')
+    file.write(f'{messages[17].Values[0]} {messages[17].Values[1]} {messages[17].Values[2]} {messages[20].Values[3]} '
+               f'{messages[3].Values[0]} {messages[25].Values[0]} {messages[8].Values[0]} {messages[8].Values[1]} '
+               f'{messages[8].Values[2]}\n')
 
 
 def start_program():
