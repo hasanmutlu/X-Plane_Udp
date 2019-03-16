@@ -1,4 +1,8 @@
 .idea/
 __pycache__
 __pycache__/
+tf_Test.py
+test2.py
+data/
+takeoff/
 

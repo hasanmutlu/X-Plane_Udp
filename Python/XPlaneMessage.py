@@ -1,7 +1,7 @@
 class XPlaneMessage:
     def __init__(self):
         self.Id = -1
-        self.Values = []
+        self.Values = [float(0)] * 8
 
     def __str__(self):
         result = f'{self.Id} -> '
