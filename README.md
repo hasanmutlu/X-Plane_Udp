@@ -1,2 +1,2 @@
 # X-Plane_Udp_Reader
-X-Plane Udp Data Reader
+Tools to send or receive XPlane udp data. Used for controlling Plane with a ANN implemented with tensorflow.
